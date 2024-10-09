@@ -1,20 +1,25 @@
 {
-  "name": "test1",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
-  },
-  "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15"
-  }
+    "name": "test1",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "build-components": "babel components --out-dir public/components --copy-files"
+    },
+    "dependencies": {
+        "next": "14.2.15",
+        "react": "^18",
+        "react-dom": "^18"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.25.7",
+        "@babel/core": "^7.25.7",
+        "@babel/preset-env": "^7.25.7",
+        "@babel/preset-react": "^7.25.7",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.15"
+    }
 }
